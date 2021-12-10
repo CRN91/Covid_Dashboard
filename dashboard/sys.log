@@ -1,0 +1,47 @@
+INFO at 2021-12-10 09:18:16,159 in logger_setup in 'custom_logger.py't line52: Logger setup to sys.log and console
+INFO at 2021-12-10 09:18:16,159 in setup in 'dashboard_ui.py't line21: starting first run setup
+INFO at 2021-12-10 09:18:16,159 in json_create in 'config_handler.py't line52: setting up config file
+INFO at 2021-12-10 09:18:16,159 in json_load in 'config_handler.py't line40: loading json file
+INFO at 2021-12-10 09:18:16,159 in json_load in 'config_handler.py't line42: json file loaded
+INFO at 2021-12-10 09:18:16,159 in config_load in 'dashboard_ui.py't line137: config file loaded
+INFO at 2021-12-10 09:18:16,159 in update_covid in 'covid_data_handler.py't line181: starting update_covid procedure
+INFO at 2021-12-10 09:18:16,159 in json_load in 'config_handler.py't line40: loading json file
+INFO at 2021-12-10 09:18:16,159 in json_load in 'config_handler.py't line42: json file loaded
+INFO at 2021-12-10 09:18:16,159 in covid_API_request in 'covid_data_handler.py't line97: starting covid_API_request function
+INFO at 2021-12-10 09:18:16,526 in covid_API_request in 'covid_data_handler.py't line146: covid_API_request function finished, returning pandas dataframe
+INFO at 2021-12-10 09:18:16,526 in covid_API_request in 'covid_data_handler.py't line97: starting covid_API_request function
+INFO at 2021-12-10 09:18:16,872 in covid_API_request in 'covid_data_handler.py't line146: covid_API_request function finished, returning pandas dataframe
+INFO at 2021-12-10 09:18:16,888 in display_covid_updater in 'covid_data_handler.py't line308: starting display_covid_updater procedure
+INFO at 2021-12-10 09:18:16,888 in update_news in 'covid_news_handling.py't line125: starting update_news procedure
+INFO at 2021-12-10 09:18:16,888 in news_API_request in 'covid_news_handling.py't line41: starting news_API_request function
+INFO at 2021-12-10 09:18:16,888 in json_load in 'config_handler.py't line40: loading json file
+INFO at 2021-12-10 09:18:16,888 in json_load in 'config_handler.py't line42: json file loaded
+ERROR at 2021-12-10 09:18:17,119 in news_API_request in 'covid_news_handling.py't line54: newsapi has returned an exception to the request
+Traceback (most recent call last):
+  File "C:\Users\AKaiz\PycharmProjects\courseworkcovid\dashboard\covid_news_handling.py", line 49, in news_API_request
+    top_headlines_request.append(newsapi.get_top_headlines(q=i,
+  File "C:\Users\AKaiz\PycharmProjects\courseworkcovid\venv\lib\site-packages\newsapi\newsapi_client.py", line 169, in get_top_headlines
+    raise NewsAPIException(r.json())
+newsapi.newsapi_exception.NewsAPIException: {'status': 'error', 'code': 'apiKeyInvalid', 'message': 'Your API key is invalid or incorrect. Check your key, or go to https://newsapi.org to create a free API key.'}
+INFO at 2021-12-10 09:18:17,119 in set_display in 'covid_news_handling.py't line156: starting set_display procedure
+INFO at 2021-12-10 09:18:17,119 in set_display in 'covid_news_handling.py't line180: set_display procedure finished
+INFO at 2021-12-10 09:18:17,119 in setup in 'dashboard_ui.py't line32: first run setup complete
+INFO at 2021-12-10 09:18:17,127 in _log in '_internal.py't line225:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO at 2021-12-10 09:18:19,304 in _log in '_internal.py't line225: 127.0.0.1 - - [10/Dec/2021 09:18:19] "[32mGET / HTTP/1.1[0m" 302 -
+WARNING at 2021-12-10 09:18:19,347 in home in 'dashboard_ui.py't line100: No connection to newsapi has been made, retrying connection.
+INFO at 2021-12-10 09:18:19,347 in update_news in 'covid_news_handling.py't line125: starting update_news procedure
+INFO at 2021-12-10 09:18:19,347 in news_API_request in 'covid_news_handling.py't line41: starting news_API_request function
+INFO at 2021-12-10 09:18:19,347 in json_load in 'config_handler.py't line40: loading json file
+INFO at 2021-12-10 09:18:19,347 in json_load in 'config_handler.py't line42: json file loaded
+ERROR at 2021-12-10 09:18:19,855 in news_API_request in 'covid_news_handling.py't line54: newsapi has returned an exception to the request
+Traceback (most recent call last):
+  File "C:\Users\AKaiz\PycharmProjects\courseworkcovid\dashboard\covid_news_handling.py", line 49, in news_API_request
+    top_headlines_request.append(newsapi.get_top_headlines(q=i,
+  File "C:\Users\AKaiz\PycharmProjects\courseworkcovid\venv\lib\site-packages\newsapi\newsapi_client.py", line 169, in get_top_headlines
+    raise NewsAPIException(r.json())
+newsapi.newsapi_exception.NewsAPIException: {'status': 'error', 'code': 'apiKeyInvalid', 'message': 'Your API key is invalid or incorrect. Check your key, or go to https://newsapi.org to create a free API key.'}
+INFO at 2021-12-10 09:18:19,855 in set_display in 'covid_news_handling.py't line156: starting set_display procedure
+INFO at 2021-12-10 09:18:19,855 in set_display in 'covid_news_handling.py't line180: set_display procedure finished
+INFO at 2021-12-10 09:18:19,855 in home in 'dashboard_ui.py't line110: finishing home page loop; rendering template
+INFO at 2021-12-10 09:18:19,870 in _log in '_internal.py't line225: 127.0.0.1 - - [10/Dec/2021 09:18:19] "GET /index HTTP/1.1" 200 -
+INFO at 2021-12-10 09:18:20,125 in _log in '_internal.py't line225: 127.0.0.1 - - [10/Dec/2021 09:18:20] "[36mGET /static/images/dashboard.png HTTP/1.1[0m" 304 -
