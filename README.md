@@ -1,4 +1,4 @@
-# Covid_Stats_Dashboard
+# Covid_Dashboard
 A covid-19 web dashboard that displays relevant news articles and stats about covid-19.
 
 Documentation for all the files and functions is available in covid_dashboard/docs/_build/html/index.html.
