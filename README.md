@@ -1,18 +1,31 @@
-# Covid_Dashboard
-A covid-19 web dashboard that displays relevant news articles and stats about covid-19.
+# Covid 19 Information Dashboard
 
-Documentation for all the files and functions is available in covid_dashboard/docs/_build/html/index.html.
+<img src="rmimg/ECM1400.svg" height="28"> <img src="rmimg/Solo.svg" height="28">
 
-requirements.txt contains all imported modules required to run the code.
+A Covid-19 web dashboard that displays relevant news articles and stats about Covid-19 for the continuous assessment of the Programming module taught by Dr Matt Collison.
 
-MIT License available to read in covid_dashboard/LICENSE.txt .
+## Installation
 
-To use the application run main.py found in covid_dashboard/dashboard/ and head to http://127.0.0.1:5000/ in a web browser.
+Requires Python 3.x and the libraries:
 
-To get news updates enter your api key (you can get one from here: https://newsapi.org/) in config.json, found in covid_dashboard/dashboard/ , as the value for api_key.
+1. "flask"
+2. "newsapi"
+3. "uk-covid19"
 
-In the config file you can change the location that the covid updates are for according to location codes found here: https://coronavirus.data.gov.uk/details/developers-guide.
+A `requirements.txt` with all importated modules is included for ease of installation.
 
-To change the national data or local data the name of the area is needed, along with the area type code, currently only 'ltla' and 'nation' codes are supported.
+## Configuration
 
-Feel free to use this code as you wish and commits are welcomed!
+In the directory `covid_dashboard/dashboard/` you can edit the `config.json` file. Include your newsapi key (new ones can be found [here](https://newsapi.org/)) for access to news articles relating to Covid-19. Here you can also change the location that the Covid updates are for according to location codes found [here](https://coronavirus.data.gov.uk/details/developers-guide). To change the national data or local data the name of the area is needed, along with the area type code, currently only 'ltla' and 'nation' codes are supported.
+
+## Usage
+
+To use the application run `main.py` found in `covid_dashboard/dashboard/` and head to http://127.0.0.1:5000/ in a web browser.
+
+## Documentation
+
+Documentation for all the files and functions is available in the file `covid_dashboard/docs/_build/html/index.html`.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
